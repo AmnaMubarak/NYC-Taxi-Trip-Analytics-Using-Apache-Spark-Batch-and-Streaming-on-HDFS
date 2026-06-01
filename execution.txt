@@ -1,0 +1,64 @@
+spark-submit ^
+--master yarn ^
+--deploy-mode client ^
+--executor-memory 4g ^
+--driver-memory 4g ^
+--num-executors 3 ^
+--executor-cores 2 ^
+--conf spark.yarn.appMasterEnv.PYSPARK_PYTHON=python ^
+--conf spark.executorEnv.PYSPARK_PYTHON=python ^
+--conf spark.yarn.jars=hdfs:///sparks/jars/* ^
+file:///D:/Osama/Uni/BigData/project/project/project/scripts2/03_batch_analysis.py
+
+
+
+spark-submit ^
+--master yarn ^
+--deploy-mode client ^
+--executor-memory 4g ^
+--driver-memory 4g ^
+--num-executors 3 ^
+--conf spark.yarn.appMasterEnv.PYSPARK_PYTHON=python ^
+--conf spark.executorEnv.PYSPARK_PYTHON=python ^
+--conf spark.yarn.jars=hdfs:///sparks/jars/* ^
+file:///D:/Osama/Uni/BigData/project/project/project/scripts2/03_batch_analysis.py
+
+
+spark-submit ^
+--master yarn ^
+--deploy-mode client ^
+--executor-memory 4g ^
+--driver-memory 4g ^
+--num-executors 2 ^
+--conf spark.yarn.appMasterEnv.PYSPARK_PYTHON=python ^
+--conf spark.executorEnv.PYSPARK_PYTHON=python ^
+--conf spark.yarn.jars=hdfs:///sparks/jars/* ^
+file:///D:/Osama/Uni/BigData/project/project/project/scripts2/03_batch_analysis_updateds.py
+
+
+
+spark-submit ^
+--master yarn ^
+--deploy-mode client ^
+--executor-memory 4g ^
+--driver-memory 4g ^
+--num-executors 2 ^
+--conf spark.yarn.appMasterEnv.PYSPARK_PYTHON=python ^
+--conf spark.executorEnv.PYSPARK_PYTHON=python ^
+--conf spark.yarn.jars=hdfs:///sparks/jars/* ^
+file:///D:/Osama/Uni/BigData/project/project/project/scripts2/04_stream_producer_updated.py
+
+
+
+
+
+spark-submit ^
+--master yarn ^
+--deploy-mode client ^
+--executor-memory 4g ^
+--driver-memory 4g ^
+--num-executors 2 ^
+--conf spark.yarn.appMasterEnv.PYSPARK_PYTHON=python ^
+--conf spark.executorEnv.PYSPARK_PYTHON=python ^
+--conf spark.yarn.jars=hdfs:///sparks/jars/* ^
+file:///D:/Osama/Uni/BigData/project/project/project/scripts2/05_streaming_analysis_updated.py
